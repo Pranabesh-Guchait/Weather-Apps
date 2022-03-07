@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+body{
+    background-color: rgb(184, 255, 249);
+}
+.search{
+    position: absolute;
+    display: inline-block;
+    padding-left: 60%;
+}
+.search input{
+    background-color: rgb(133, 244, 255);
+    color: rgb(54, 54, 54);
+    border: 0;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.164);
+}
+::placeholder {
+    color: rgb(58, 58, 58);
+}
+.search button{
+    background-color: rgb(133, 244, 255);
+    border: 0;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(58, 58, 58);
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+.search button:active{
+    box-shadow: -2px -3px rgba(0, 0, 0, 0.103);
+}
+.middle{
+    margin-left: 3%;
+    
+}
+.middle ul div {
+    float: right;
+    padding-right: 35%;
+    color: rgb(66, 194, 255);
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 60px;
+}

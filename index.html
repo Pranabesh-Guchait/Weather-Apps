@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather apps</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <img src="image/logo.png" alt="logo" width="70px">
+        <div class="search">
+            <ul>
+                <input type="search" name="city_name" placeholder="Search...">
+                <button>Add City</button>
+            </ul>
+        </div>
+    </header>
+    <div class="middle">
+        <ul>
+            <img src="image/background.png" alt="background" width="600px">
+            <div>
+                <h1 id="temp">28°F</h1>
+                <h2 id="place">Kolkata</h2>
+            </div>
+        </ul>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <% for (weather of weather_data) { %>
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                               
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title"><%= weather.city %></span>
+                                        <br>
+                                        <span class="subtitle"><%= weather.temperature %>° F</span>
+                                        <br> <%= weather.description %>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
